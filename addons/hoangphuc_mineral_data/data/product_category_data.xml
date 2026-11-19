@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ============================================================= -->
+        <!-- DANH MỤC SẢN PHẨM KHOÁNG SẢN (PRODUCT CATEGORIES)             -->
+        <!-- ============================================================= -->
+
+        <record id="categ_hoangphuc_root" model="product.category">
+            <field name="name">Khoáng Sản Hoàng Phúc</field>
+        </record>
+
+        <record id="categ_silica" model="product.category">
+            <field name="name">Cát &amp; Bột Thạch Anh (Silica)</field>
+            <field name="parent_id" ref="categ_hoangphuc_root"/>
+        </record>
+
+        <record id="categ_limestone" model="product.category">
+            <field name="name">Đá Vôi Canxit &amp; Dolomite</field>
+            <field name="parent_id" ref="categ_hoangphuc_root"/>
+        </record>
+
+        <record id="categ_titanium" model="product.category">
+            <field name="name">Quặng Sa Khoáng Titan &amp; Zircon</field>
+            <field name="parent_id" ref="categ_hoangphuc_root"/>
+        </record>
+
+        <record id="categ_industrial_minerals" model="product.category">
+            <field name="name">Khoáng Sản Công Nghiệp (Barite, Kaolin)</field>
+            <field name="parent_id" ref="categ_hoangphuc_root"/>
+        </record>
+
+        <record id="categ_supplies_packaging" model="product.category">
+            <field name="name">Vật Tư Phụ Trợ &amp; Bao Bì</field>
+            <field name="parent_id" ref="categ_hoangphuc_root"/>
+        </record>
+
+    </data>
+</odoo>

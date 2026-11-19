@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ============================================================= -->
+        <!-- ĐƠN MUA HÀNG KHOÁNG SẢN HOÀNG PHÚC (PURCHASE ORDERS)          -->
+        <!-- ============================================================= -->
+
+        <!-- ĐƠN PO001: Mua 6.000 tấn Quặng thạch anh thô từ Mỏ Hoàng Liên (Đã xác nhận) -->
+        <record id="po_hp_001" model="purchase.order">
+            <field name="name">PO-HP2026-001</field>
+            <field name="partner_id" ref="partner_mo_hoang_lien"/>
+            <field name="date_order">2026-10-01 09:00:00</field>
+            <field name="date_planned">2026-10-20 18:00:00</field>
+            <field name="state">purchase</field>
+            <field name="notes">Hợp đồng mua quặng thạch anh thô nguyên khai mỏ Lào Cai, bốc xúc lên toa tàu hỏa về Cảng Hải Phòng. Hàm lượng SiO2 > 98%.</field>
+        </record>
+
+        <record id="po_line_hp_001_1" model="purchase.order.line">
+            <field name="order_id" ref="po_hp_001"/>
+            <field name="product_id" ref="product_cat_thach_anh_tho"/>
+            <field name="name">Quặng Thạch Anh Thô Nguyên Khai (Lump Silica)</field>
+            <field name="product_qty">6000.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">350000.0</field>
+            <field name="date_planned">2026-10-20 18:00:00</field>
+        </record>
+
+        <!-- ĐƠN PO002: Mua 15.000 tấn Đá canxit thô từ Mỏ Tam Điệp (Đã xác nhận) -->
+        <record id="po_hp_002" model="purchase.order">
+            <field name="name">PO-HP2026-002</field>
+            <field name="partner_id" ref="partner_mo_tam_diep"/>
+            <field name="date_order">2026-10-05 10:30:00</field>
+            <field name="date_planned">2026-10-25 18:00:00</field>
+            <field name="state">purchase</field>
+            <field name="notes">Mua đá canxit thô phục vụ dây chuyền nghiền bột siêu mịn Nhà máy Nghi Sơn. Giao xà lan đường thủy.</field>
+        </record>
+
+        <record id="po_line_hp_002_1" model="purchase.order.line">
+            <field name="order_id" ref="po_hp_002"/>
+            <field name="product_id" ref="product_da_voi_tho_caco3"/>
+            <field name="name">Đá Vôi Canxit Thô Tam Điệp (Raw Limestone)</field>
+            <field name="product_qty">15000.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">160000.0</field>
+            <field name="date_planned">2026-10-25 18:00:00</field>
+        </record>
+
+        <!-- ĐƠN PO003: Mua 1.500 tấn Quặng Titan thô từ Mỏ Kỳ Anh (Đã hoàn tất nhập kho) -->
+        <record id="po_hp_003" model="purchase.order">
+            <field name="name">PO-HP2026-003</field>
+            <field name="partner_id" ref="partner_mo_titan_ky_anh"/>
+            <field name="date_order">2026-10-12 14:00:00</field>
+            <field name="date_planned">2026-10-30 18:00:00</field>
+            <field name="state">done</field>
+            <field name="notes">Đơn mua quặng sa khoáng thô từ mỏ Kỳ Anh về nhà máy tuyển tinh quặng xuất khẩu. Đã nghiệm thu và giao đủ về bãi.</field>
+        </record>
+
+        <record id="po_line_hp_003_1" model="purchase.order.line">
+            <field name="order_id" ref="po_hp_003"/>
+            <field name="product_id" ref="product_tinh_quang_titan"/>
+            <field name="name">Tinh Quặng Titan Ilmenite 52% TiO2 (Titanium Ore)</field>
+            <field name="product_qty">1500.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">2800000.0</field>
+            <field name="date_planned">2026-10-30 18:00:00</field>
+        </record>
+
+        <!-- ĐƠN PO004: Mua 8.000 cái Vỏ bao Jumbo từ Bao bì Việt Hưng (Đã xác nhận) -->
+        <record id="po_hp_004" model="purchase.order">
+            <field name="name">PO-HP2026-004</field>
+            <field name="partner_id" ref="partner_bao_bi_viet_hung"/>
+            <field name="date_order">2026-10-18 11:00:00</field>
+            <field name="date_planned">2026-11-05 18:00:00</field>
+            <field name="state">purchase</field>
+            <field name="notes">Bao Jumbo 1 tấn chống ẩm chuyên dùng đóng khoáng sản xuất khẩu và cấp các nhà máy sơn, luyện thép.</field>
+        </record>
+
+        <record id="po_line_hp_004_1" model="purchase.order.line">
+            <field name="order_id" ref="po_hp_004"/>
+            <field name="product_id" ref="product_bao_jumbo_1t"/>
+            <field name="name">Bao Jumbo 1 Tấn Có Lót PE Chống Ẩm (FIBC Bag)</field>
+            <field name="product_qty">8000.0</field>
+            <field name="product_uom" ref="uom.product_uom_unit"/>
+            <field name="price_unit">110000.0</field>
+            <field name="date_planned">2026-11-05 18:00:00</field>
+        </record>
+
+        <!-- ĐƠN PO005: Yêu cầu báo giá (RFQ/Draft) Axit béo tráng phủ từ Hóa chất Đức Giang -->
+        <record id="po_hp_005" model="purchase.order">
+            <field name="name">PO-HP2026-005</field>
+            <field name="partner_id" ref="partner_duc_giang_chem"/>
+            <field name="date_order">2026-10-22 15:30:00</field>
+            <field name="date_planned">2026-11-15 18:00:00</field>
+            <field name="state">draft</field>
+            <field name="notes">Yêu cầu báo giá hóa chất trợ tuyển và axit béo stearic tráng phủ cho dây chuyền bột đá tháng 11/2026.</field>
+        </record>
+
+        <record id="po_line_hp_005_1" model="purchase.order.line">
+            <field name="order_id" ref="po_hp_005"/>
+            <field name="product_id" ref="product_bot_da_voi_sieu_min"/>
+            <field name="name">Axit béo Stearic Acid tráng phủ bột đá CaCO3</field>
+            <field name="product_qty">40.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">18000000.0</field>
+            <field name="date_planned">2026-11-15 18:00:00</field>
+        </record>
+
+    </data>
+</odoo>

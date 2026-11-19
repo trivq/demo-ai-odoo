@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ============================================================= -->
+        <!-- NHÀ CUNG CẤP KHOÁNG SẢN & VẬT TƯ (VENDORS)                     -->
+        <!-- ============================================================= -->
+
+        <record id="partner_mo_hoang_lien" model="res.partner">
+            <field name="name">Công ty TNHH Khai thác Mỏ Hoàng Liên - Lào Cai</field>
+            <field name="is_company">True</field>
+            <field name="supplier_rank">1</field>
+            <field name="customer_rank">0</field>
+            <field name="street">Khu kinh tế Cửa khẩu Kim Thành, Phường Duyên Hải</field>
+            <field name="city">Lào Cai</field>
+            <field name="phone">0214 388 9123</field>
+            <field name="email">cungung@mohoanglien.vn</field>
+            <field name="comment">Nhà cung cấp quặng thạch anh thô nguyên khai và apatit thô mỏ Tây Bắc. Hàm lượng SiO2 > 98%.</field>
+        </record>
+
+        <record id="partner_mo_tam_diep" model="res.partner">
+            <field name="name">Công ty Cổ phần Khai thác Đá vôi Tam Điệp</field>
+            <field name="is_company">True</field>
+            <field name="supplier_rank">1</field>
+            <field name="customer_rank">0</field>
+            <field name="street">Cụm Công nghiệp Tam Điệp, Phường Tây Sơn</field>
+            <field name="city">Ninh Bình</field>
+            <field name="phone">0229 377 6543</field>
+            <field name="email">tamdiepstone@caco3.vn</field>
+            <field name="comment">Mỏ khai thác đá canxit trắng nguyên khối và đá vôi dolomite chất lượng cao phục vụ chế biến bột siêu mịn.</field>
+        </record>
+
+        <record id="partner_mo_titan_ky_anh" model="res.partner">
+            <field name="name">Mỏ Khai thác Sa khoáng Titan Kỳ Anh - Hà Tĩnh</field>
+            <field name="is_company">True</field>
+            <field name="supplier_rank">1</field>
+            <field name="customer_rank">0</field>
+            <field name="street">Khu kinh tế Vũng Áng, Thị xã Kỳ Anh</field>
+            <field name="city">Hà Tĩnh</field>
+            <field name="phone">0239 386 8888</field>
+            <field name="email">sales@titankyanh.vn</field>
+            <field name="comment">Khai thác sa khoáng ven biển cung cấp quặng thô Titan Ilmenite và cát Zircon tự nhiên.</field>
+        </record>
+
+        <record id="partner_duc_giang_chem" model="res.partner">
+            <field name="name">Tập đoàn Hóa chất Đức Giang - Chi nhánh Lào Cai</field>
+            <field name="is_company">True</field>
+            <field name="supplier_rank">1</field>
+            <field name="customer_rank">0</field>
+            <field name="street">KCN Tằng Loỏng, Huyện Bảo Thắng</field>
+            <field name="city">Lào Cai</field>
+            <field name="phone">0214 385 5566</field>
+            <field name="email">contact@ducgiangchem.vn</field>
+            <field name="comment">Cung cấp hóa chất tuyển nổi, axit béo stearic tráng phủ bột đá và hóa chất tách tạp chất quặng.</field>
+        </record>
+
+        <record id="partner_bao_bi_viet_hung" model="res.partner">
+            <field name="name">Công ty Cổ phần Bao bì Jumbo Việt Hưng</field>
+            <field name="is_company">True</field>
+            <field name="supplier_rank">1</field>
+            <field name="customer_rank">0</field>
+            <field name="street">KCN Phố Nối A, Huyện Văn Lâm</field>
+            <field name="city">Hưng Yên</field>
+            <field name="phone">0221 398 7654</field>
+            <field name="email">sales@jumboviethung.vn</field>
+            <field name="comment">Sản xuất bao Jumbo chịu tải 1.000kg - 1.500kg tráng màng PE chống ẩm, chuyên dùng đóng gói khoáng sản xuất khẩu.</field>
+        </record>
+
+        <record id="partner_van_tai_duyen_hai" model="res.partner">
+            <field name="name">Tổng công ty Vận tải Thủy Duyên Hải</field>
+            <field name="is_company">True</field>
+            <field name="supplier_rank">1</field>
+            <field name="customer_rank">0</field>
+            <field name="street">Số 18 Bến Bính, Phường Minh Khai, Quận Hồng Bàng</field>
+            <field name="city">Hải Phòng</field>
+            <field name="phone">0225 384 2112</field>
+            <field name="email">dieuvan@duyenhaiship.vn</field>
+            <field name="comment">Đơn vị vận tải xà lan đường sông và tàu biển chở khoáng sản từ mỏ về nhà máy chế biến và ra cảng xuất khẩu.</field>
+        </record>
+
+        <!-- ============================================================= -->
+        <!-- KHÁCH HÀNG TIÊU THỤ KHOÁNG SẢN (CUSTOMERS)                    -->
+        <!-- ============================================================= -->
+
+        <record id="partner_viglacera_dap_cau" model="res.partner">
+            <field name="name">Tổng công ty Viglacera - Công ty Kính nổi Đáp Cầu</field>
+            <field name="is_company">True</field>
+            <field name="customer_rank">1</field>
+            <field name="supplier_rank">0</field>
+            <field name="street">Phường Vũ Ninh, Thành phố Bắc Ninh</field>
+            <field name="city">Bắc Ninh</field>
+            <field name="phone">0222 382 1369</field>
+            <field name="email">kinhdapcau@viglacera.com.vn</field>
+            <field name="comment">Khách hàng chiến lược tiêu thụ Cát thạch anh lọc kính tinh chế phục vụ dây chuyền sản xuất kính nổi xây dựng.</field>
+        </record>
+
+        <record id="partner_thep_hoa_phat" model="res.partner">
+            <field name="name">Công ty Cổ phần Thép Hòa Phát Dung Quất</field>
+            <field name="is_company">True</field>
+            <field name="customer_rank">1</field>
+            <field name="supplier_rank">0</field>
+            <field name="street">Khu kinh tế Dung Quất, Xã Bình Đông, Huyện Bình Sơn</field>
+            <field name="city">Quảng Ngãi</field>
+            <field name="phone">0255 362 6666</field>
+            <field name="email">procurement@hoaphat.com.vn</field>
+            <field name="comment">Khách hàng lớn tiêu thụ Quặng Dolomite luyện thép định kỳ 5.000 - 10.000 tấn/tháng làm chất trợ dung lò cao.</field>
+        </record>
+
+        <record id="partner_nippon_paint" model="res.partner">
+            <field name="name">Công ty TNHH Sơn Nippon Paint Việt Nam</field>
+            <field name="is_company">True</field>
+            <field name="customer_rank">1</field>
+            <field name="supplier_rank">0</field>
+            <field name="street">Lô 18, KCN Quang Minh, Huyện Mê Linh</field>
+            <field name="city">Hà Nội</field>
+            <field name="phone">024 3816 9999</field>
+            <field name="email">purchasing@nipponpaint.com.vn</field>
+            <field name="comment">Tiêu thụ Bột đá CaCO3 siêu mịn tráng phủ axit béo D97=5 micron làm phụ gia chất độn cho sơn kiến trúc cao cấp.</field>
+        </record>
+
+        <record id="partner_pv_drilling" model="res.partner">
+            <field name="name">Tổng Công ty Cổ phần Khoan và Dịch vụ Khoan Dầu khí (PV Drilling)</field>
+            <field name="is_company">True</field>
+            <field name="customer_rank">1</field>
+            <field name="supplier_rank">0</field>
+            <field name="street">KCN Đông Xuyên, Phường Rạch Dừa</field>
+            <field name="city">Bà Rịa - Vũng Tàu</field>
+            <field name="phone">0254 383 9999</field>
+            <field name="email">supplychain@pvdrilling.com.vn</field>
+            <field name="comment">Mua Bột Barite tỷ trọng cao 4.2 SG tiêu chuẩn API dùng cho dung dịch khoan giếng dầu khí ngoài khơi.</field>
+        </record>
+
+        <record id="partner_posco_daewoo" model="res.partner">
+            <field name="name">POSCO International Corporation (Korea)</field>
+            <field name="is_company">True</field>
+            <field name="customer_rank">1</field>
+            <field name="supplier_rank">0</field>
+            <field name="street">134 Convensia-daero, Yeonsu-gu</field>
+            <field name="city">Incheon</field>
+            <field name="phone">+82 32 787 2000</field>
+            <field name="email">minerals@poscointl.com</field>
+            <field name="comment">Khách hàng xuất khẩu chiến lược tiêu thụ Tinh quặng Titan Ilmenite hàm lượng TiO2 52% sang các nhà máy luyện xỉ tại Hàn Quốc.</field>
+        </record>
+
+        <record id="partner_tokyo_ceramics" model="res.partner">
+            <field name="name">Tokyo Ceramics &amp; Advanced Materials Co., Ltd</field>
+            <field name="is_company">True</field>
+            <field name="customer_rank">1</field>
+            <field name="supplier_rank">0</field>
+            <field name="street">Chiyoda-ku, Marunouchi 1-Chome</field>
+            <field name="city">Tokyo</field>
+            <field name="phone">+81 3 3288 1111</field>
+            <field name="email">import@tokyoceramics.co.jp</field>
+            <field name="comment">Nhập khẩu Bột thạch anh siêu mịn 325 mesh độ tinh khiết cao phục vụ sản xuất linh kiện vi mạch điện tử và gốm kỹ thuật cao.</field>
+        </record>
+
+        <record id="partner_dong_tam_long_an" model="res.partner">
+            <field name="name">Công ty Cổ phần Đồng Tâm - Nhà máy Gạch men Long An</field>
+            <field name="is_company">True</field>
+            <field name="customer_rank">1</field>
+            <field name="supplier_rank">0</field>
+            <field name="street">KCN Thuận Đạo, Huyện Bến Lức</field>
+            <field name="city">Long An</field>
+            <field name="phone">0272 387 2222</field>
+            <field name="email">vattu@dongtam.com.vn</field>
+            <field name="comment">Tiêu thụ Bột thạch anh và nguyên liệu cao lanh chế biến xương gạch granite và men gốm sứ mỹ nghệ.</field>
+        </record>
+
+    </data>
+</odoo>

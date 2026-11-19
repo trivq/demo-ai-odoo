@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- ============================================================= -->
+        <!-- TỒN KHO THỰC TẾ CÁC KHO KHOÁNG SẢN HOÀNG PHÚC (STOCK QUANTS)    -->
+        <!-- ============================================================= -->
+
+        <!-- 1. Cát thạch anh lọc kính tại Kho Cảng Hải Phòng: 2.500 tấn -->
+        <record id="quant_silica_glass_hp" model="stock.quant">
+            <field name="product_id" ref="product_cat_thach_anh_loc_kinh"/>
+            <field name="location_id" ref="location_kho_hai_phong"/>
+            <field name="quantity">2500.0</field>
+        </record>
+
+        <!-- 2. Bột thạch anh siêu mịn 325 mesh tại Kho Cảng Hải Phòng: 600 tấn -->
+        <record id="quant_silica_325_hp" model="stock.quant">
+            <field name="product_id" ref="product_bot_thach_anh_325"/>
+            <field name="location_id" ref="location_kho_hai_phong"/>
+            <field name="quantity">600.0</field>
+        </record>
+
+        <!-- 3. Quặng thạch anh thô nguyên khai tại Kho Bãi Mỏ Lào Cai: 4.000 tấn -->
+        <record id="quant_silica_raw_lc" model="stock.quant">
+            <field name="product_id" ref="product_cat_thach_anh_tho"/>
+            <field name="location_id" ref="location_kho_lao_cai"/>
+            <field name="quantity">4000.0</field>
+        </record>
+
+        <!-- 4. Đá canxit thô tại Kho Nhà máy Nghi Sơn: 8.500 tấn -->
+        <record id="quant_caco3_raw_ns" model="stock.quant">
+            <field name="product_id" ref="product_da_voi_tho_caco3"/>
+            <field name="location_id" ref="location_kho_nghi_son"/>
+            <field name="quantity">8500.0</field>
+        </record>
+
+        <!-- 5. Bột đá CaCO3 siêu mịn tráng phủ axit béo tại Kho Nhà máy Nghi Sơn: 1.800 tấn -->
+        <record id="quant_caco3_coated_ns" model="stock.quant">
+            <field name="product_id" ref="product_bot_da_voi_sieu_min"/>
+            <field name="location_id" ref="location_kho_nghi_son"/>
+            <field name="quantity">1800.0</field>
+        </record>
+
+        <!-- 6. Quặng Dolomite luyện thép tại Kho Nhà máy Nghi Sơn: 3.200 tấn -->
+        <record id="quant_dolomite_ns" model="stock.quant">
+            <field name="product_id" ref="product_quang_dolomite"/>
+            <field name="location_id" ref="location_kho_nghi_son"/>
+            <field name="quantity">3200.0</field>
+        </record>
+
+        <!-- 7. Tinh quặng Titan Ilmenite tại Kho Cảng Hải Phòng: 1.450 tấn -->
+        <record id="quant_titan_hp" model="stock.quant">
+            <field name="product_id" ref="product_tinh_quang_titan"/>
+            <field name="location_id" ref="location_kho_hai_phong"/>
+            <field name="quantity">1450.0</field>
+        </record>
+
+        <!-- 8. Bột Barite khoan dầu khí 4.2 SG tại Kho Cảng Hải Phòng: 950 tấn -->
+        <record id="quant_barite_hp" model="stock.quant">
+            <field name="product_id" ref="product_bot_barite_42"/>
+            <field name="location_id" ref="location_kho_hai_phong"/>
+            <field name="quantity">950.0</field>
+        </record>
+
+        <!-- 9. Vỏ bao Jumbo 1 tấn tại Kho Nhà máy Nghi Sơn: 6.000 cái -->
+        <record id="quant_jumbo_ns" model="stock.quant">
+            <field name="product_id" ref="product_bao_jumbo_1t"/>
+            <field name="location_id" ref="location_kho_nghi_son"/>
+            <field name="quantity">6000.0</field>
+        </record>
+
+    </data>
+</odoo>

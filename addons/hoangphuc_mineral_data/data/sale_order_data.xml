@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ============================================================= -->
+        <!-- ĐƠN BÁN HÀNG KHOÁNG SẢN HOÀNG PHÚC (SALES ORDERS)             -->
+        <!-- ============================================================= -->
+
+        <!-- ĐƠN SO001: Bán 3.000 tấn Cát thạch anh lọc kính cho Viglacera Đáp Cầu (Đã xác nhận) -->
+        <record id="so_hp_001" model="sale.order">
+            <field name="name">SO-HP2026-001</field>
+            <field name="partner_id" ref="partner_viglacera_dap_cau"/>
+            <field name="date_order">2026-10-10 08:30:00</field>
+            <field name="state">sale</field>
+            <field name="note">Hợp đồng cung cấp cát thạch anh làm kính nổi tháng 10-11/2026. Giao tại kho bên mua Quế Võ - Bắc Ninh. Tiêu chuẩn SiO2 > 99.5%, Fe2O3 &lt; 0.015%.</field>
+        </record>
+
+        <record id="so_line_hp_001_1" model="sale.order.line">
+            <field name="order_id" ref="so_hp_001"/>
+            <field name="product_id" ref="product_cat_thach_anh_loc_kinh"/>
+            <field name="name">Cát Thạch Anh Tinh Chế Làm Kính (Silica Sand 99.5%)</field>
+            <field name="product_uom_qty">3000.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">850000.0</field>
+        </record>
+
+        <!-- ĐƠN SO002: Bán 8.000 tấn Quặng Dolomite cho Thép Hòa Phát Dung Quất (Đã xác nhận) -->
+        <record id="so_hp_002" model="sale.order">
+            <field name="name">SO-HP2026-002</field>
+            <field name="partner_id" ref="partner_thep_hoa_phat"/>
+            <field name="date_order">2026-10-15 10:00:00</field>
+            <field name="state">sale</field>
+            <field name="note">Giao bằng tàu biển 4.000 tấn cập Cảng chuyên dùng Hòa Phát Dung Quất. Dung sai hàm lượng MgO > 19%, CaO > 30%.</field>
+        </record>
+
+        <record id="so_line_hp_002_1" model="sale.order.line">
+            <field name="order_id" ref="so_hp_002"/>
+            <field name="product_id" ref="product_quang_dolomite"/>
+            <field name="name">Quặng Dolomite Luyện Thép (Dolomite Lump 10-50mm)</field>
+            <field name="product_uom_qty">8000.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">680000.0</field>
+        </record>
+
+        <!-- ĐƠN SO003: Bán 1.200 tấn Bột đá CaCO3 siêu mịn cho Sơn Nippon Paint (Đã xác nhận) -->
+        <record id="so_hp_003" model="sale.order">
+            <field name="name">SO-HP2026-003</field>
+            <field name="partner_id" ref="partner_nippon_paint"/>
+            <field name="date_order">2026-10-20 14:15:00</field>
+            <field name="state">sale</field>
+            <field name="note">Bột đá trắng siêu mịn tráng phủ axit béo D97 = 5 micron, đóng bao Jumbo 1 tấn lót PE chống ẩm, giao kho bên mua tại Mê Linh - Hà Nội.</field>
+        </record>
+
+        <record id="so_line_hp_003_1" model="sale.order.line">
+            <field name="order_id" ref="so_hp_003"/>
+            <field name="product_id" ref="product_bot_da_voi_sieu_min"/>
+            <field name="name">Bột Đá CaCO3 Siêu Mịn Tráng Phủ Axit Béo (Coated Calcium Carbonate)</field>
+            <field name="product_uom_qty">1200.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">1800000.0</field>
+        </record>
+
+        <!-- ĐƠN SO004: Xuất khẩu 1.000 tấn Quặng Titan Ilmenite cho POSCO Hàn Quốc (Đã xác nhận) -->
+        <record id="so_hp_004" model="sale.order">
+            <field name="name">SO-HP2026-004</field>
+            <field name="partner_id" ref="partner_posco_daewoo"/>
+            <field name="date_order">2026-10-25 09:45:00</field>
+            <field name="state">sale</field>
+            <field name="note">Hợp đồng xuất khẩu CIF Cảng Gwangyang (Hàn Quốc). Thanh toán bằng L/C không hủy ngang. Giám định chất lượng và khối lượng bởi SGS tại Cảng Hải Phòng.</field>
+        </record>
+
+        <record id="so_line_hp_004_1" model="sale.order.line">
+            <field name="order_id" ref="so_hp_004"/>
+            <field name="product_id" ref="product_tinh_quang_titan"/>
+            <field name="name">Tinh Quặng Titan Ilmenite 52% TiO2 (Titanium Ore)</field>
+            <field name="product_uom_qty">1000.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">4600000.0</field>
+        </record>
+
+        <!-- ĐƠN SO005: Bán 800 tấn Bột Barite cho PV Drilling (Đã xác nhận) -->
+        <record id="so_hp_005" model="sale.order">
+            <field name="name">SO-HP2026-005</field>
+            <field name="partner_id" ref="partner_pv_drilling"/>
+            <field name="date_order">2026-10-28 16:00:00</field>
+            <field name="state">sale</field>
+            <field name="note">Cung cấp bột barite tỷ trọng 4.2 SG phục vụ chiến dịch khoan thăm dò khai thác ngoài khơi mỏ Bạch Hổ - Vũng Tàu. Giao hàng tại Cảng Dịch vụ Dầu khí PTSC Vũng Tàu.</field>
+        </record>
+
+        <record id="so_line_hp_005_1" model="sale.order.line">
+            <field name="order_id" ref="so_hp_005"/>
+            <field name="product_id" ref="product_bot_barite_42"/>
+            <field name="name">Bột Barite Khoan Dầu Khí 4.2 SG (API Barite Powder)</field>
+            <field name="product_uom_qty">800.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">3200000.0</field>
+        </record>
+
+        <!-- ĐƠN SO006: Báo giá (Draft) Xuất khẩu 500 tấn Bột thạch anh 325 mesh cho Tokyo Ceramics Nhật Bản -->
+        <record id="so_hp_006" model="sale.order">
+            <field name="name">SO-HP2026-006</field>
+            <field name="partner_id" ref="partner_tokyo_ceramics"/>
+            <field name="date_order">2026-11-02 11:20:00</field>
+            <field name="state">draft</field>
+            <field name="note">Báo giá xuất khẩu FOB Cảng Đình Vũ Hải Phòng, đóng bao 25kg xếp trên pallet quấn màng co tiêu chuẩn Nhật Bản.</field>
+        </record>
+
+        <record id="so_line_hp_006_1" model="sale.order.line">
+            <field name="order_id" ref="so_hp_006"/>
+            <field name="product_id" ref="product_bot_thach_anh_325"/>
+            <field name="name">Bột Thạch Anh Siêu Mịn 325 Mesh (Silica Powder)</field>
+            <field name="product_uom_qty">500.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">1450000.0</field>
+        </record>
+
+        <!-- ĐƠN SO007: Báo giá (Draft) 300 tấn Bột thạch anh cho Gạch men Đồng Tâm Long An -->
+        <record id="so_hp_007" model="sale.order">
+            <field name="name">SO-HP2026-007</field>
+            <field name="partner_id" ref="partner_dong_tam_long_an"/>
+            <field name="date_order">2026-11-05 15:00:00</field>
+            <field name="state">draft</field>
+            <field name="note">Báo giá cấp nguyên liệu xương gạch men cho nhà máy Bến Lức - Long An. Đóng bao Jumbo 1 tấn.</field>
+        </record>
+
+        <record id="so_line_hp_007_1" model="sale.order.line">
+            <field name="order_id" ref="so_hp_007"/>
+            <field name="product_id" ref="product_bot_thach_anh_325"/>
+            <field name="name">Bột Thạch Anh Siêu Mịn 325 Mesh (Silica Powder)</field>
+            <field name="product_uom_qty">300.0</field>
+            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="price_unit">1450000.0</field>
+        </record>
+
+    </data>
+</odoo>

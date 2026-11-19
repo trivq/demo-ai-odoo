@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ============================================================= -->
+        <!-- SẢN PHẨM KHOÁNG SẢN CHUẨN ODOO (PRODUCTS)                      -->
+        <!-- ============================================================= -->
+
+        <!-- 1. QUẶNG THẠCH ANH THÔ -->
+        <record id="product_cat_thach_anh_tho" model="product.product">
+            <field name="name">Quặng Thạch Anh Thô Nguyên Khai (Lump Silica)</field>
+            <field name="default_code">HP-RAW-SILICA</field>
+            <field name="categ_id" ref="categ_silica"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="standard_price">350000.0</field>
+            <field name="list_price">450000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Quặng thạch anh thô nguyên khai mỏ Lào Cai, kích cỡ 50-150mm, SiO2 tối thiểu 98%.</field>
+            <field name="description_purchase">Quặng thô khai thác bốc xúc tại mỏ Lào Cai, độ ẩm dưới 5%.</field>
+        </record>
+
+        <!-- 2. CÁT THẠCH ANH TINH CHẾ LÀM KÍNH -->
+        <record id="product_cat_thach_anh_loc_kinh" model="product.product">
+            <field name="name">Cát Thạch Anh Tinh Chế Làm Kính (Silica Sand 99.5%)</field>
+            <field name="default_code">HP-SILICA-GLASS</field>
+            <field name="categ_id" ref="categ_silica"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="standard_price">520000.0</field>
+            <field name="list_price">850000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Cát thạch anh sàng tuyển từ tính cao cấp, hàm lượng SiO2 > 99.5%, Fe2O3 &lt; 0.015%, tiêu chuẩn sản xuất kính nổi và kính quang học.</field>
+            <field name="description_purchase">Cát thạch anh rửa sạch sấy khô tiêu chuẩn nhà máy lọc kính.</field>
+        </record>
+
+        <!-- 3. BỘT THẠCH ANH SIÊU MỊN 325 MESH -->
+        <record id="product_bot_thach_anh_325" model="product.product">
+            <field name="name">Bột Thạch Anh Siêu Mịn 325 Mesh (Silica Powder)</field>
+            <field name="default_code">HP-SILICA-P325</field>
+            <field name="categ_id" ref="categ_silica"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="standard_price">950000.0</field>
+            <field name="list_price">1450000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Bột thạch anh nghiền mịn 325 mesh (44 micron), độ trắng > 92%, dùng cho men gốm sứ cao cấp, linh kiện điện tử và sơn chịu mài mòn.</field>
+            <field name="description_purchase">Bột thạch anh nghiền mịn từ quặng tinh tuyển chọn lọc.</field>
+        </record>
+
+        <!-- 4. ĐÁ VÔI CANXIT THÔ TAM ĐIỆP -->
+        <record id="product_da_voi_tho_caco3" model="product.product">
+            <field name="name">Đá Vôi Canxit Thô Tam Điệp (Raw Limestone)</field>
+            <field name="default_code">HP-RAW-CACO3</field>
+            <field name="categ_id" ref="categ_limestone"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="standard_price">160000.0</field>
+            <field name="list_price">240000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Đá vôi canxit tự nhiên mỏ Tam Điệp, hàm lượng CaCO3 > 97%, kích thước đồng đều 40-80mm.</field>
+            <field name="description_purchase">Đá vôi canxit khai thác nổ mìn và đập thô tại mỏ Tam Điệp Ninh Bình.</field>
+        </record>
+
+        <!-- 5. BỘT ĐÁ CACO3 SIÊU MỊN TRÁNG PHỦ AXIT BÉO -->
+        <record id="product_bot_da_voi_sieu_min" model="product.product">
+            <field name="name">Bột Đá CaCO3 Siêu Mịn Tráng Phủ Axit Béo (Coated Calcium Carbonate)</field>
+            <field name="default_code">HP-CACO3-COATED</field>
+            <field name="categ_id" ref="categ_limestone"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="standard_price">1150000.0</field>
+            <field name="list_price">180000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Bột đá canxit siêu mịn kích cỡ D97 = 5 micron tráng phủ axit béo stearic acid, độ trắng 98%, ứng dụng làm hạt nhựa taical Masterbatch, màng PE và sơn cao cấp.</field>
+            <field name="description_purchase">Bột đá canxit tráng phủ axit béo tiêu chuẩn xuất khẩu.</field>
+        </record>
+
+        <!-- 6. QUẶNG DOLOMITE LUYỆN THÉP -->
+        <record id="product_quang_dolomite" model="product.product">
+            <field name="name">Quặng Dolomite Luyện Thép (Dolomite Lump 10-50mm)</field>
+            <field name="default_code">HP-DOLOMITE-STEEL</field>
+            <field name="categ_id" ref="categ_limestone"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="standard_price">420000.0</field>
+            <field name="list_price">680000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Quặng dolomite chất lượng cao, hàm lượng MgO > 19%, CaO > 30%, cỡ hạt 10-50mm, chuyên dùng tạo xỉ và trợ dung lò cao luyện thép.</field>
+            <field name="description_purchase">Quặng dolomite sàng phân loại theo tiêu chuẩn ngành luyện kim.</field>
+        </record>
+
+        <!-- 7. TINH QUẶNG TITAN ILMENITE 52% TIO2 -->
+        <record id="product_tinh_quang_titan" model="product.product">
+            <field name="name">Tinh Quặng Titan Ilmenite 52% TiO2 (Titanium Ore)</field>
+            <field name="default_code">HP-TITAN-ILM52</field>
+            <field name="categ_id" ref="categ_titanium"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="standard_price">2800000.0</field>
+            <field name="list_price">4600000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Tinh quặng sa khoáng Ilmenite tuyển khô và từ trường, hàm lượng TiO2 tối thiểu 52%, hàng xuất khẩu tiêu chuẩn quốc tế.</field>
+            <field name="description_purchase">Quặng sa khoáng thô từ mỏ Kỳ Anh tuyển nổi thô đạt 48-52% TiO2.</field>
+        </record>
+
+        <!-- 8. BỘT BARITE KHOAN DẦU KHÍ 4.2 SG -->
+        <record id="product_bot_barite_42" model="product.product">
+            <field name="name">Bột Barite Khoan Dầu Khí 4.2 SG (API Barite Powder)</field>
+            <field name="default_code">HP-BARITE-42</field>
+            <field name="categ_id" ref="categ_industrial_minerals"/>
+            <field name="uom_id" ref="uom.product_uom_ton"/>
+            <field name="uom_po_id" ref="uom.product_uom_ton"/>
+            <field name="standard_price">2100000.0</field>
+            <field name="list_price">3200000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Bột barite khoáng chất Bari Sunfat BaSO4 tỷ trọng đạt 4.20 g/cm3, đạt chuẩn API 13A phục vụ pha chế dung dịch dung trọng nặng cho khoan thăm dò khai thác dầu khí.</field>
+            <field name="description_purchase">Bột quặng Barite nghiền mịn kiểm định tỷ trọng API.</field>
+        </record>
+
+        <!-- 9. BAO JUMBO 1 TẤN CÓ LÓT PE CHỐNG ẨM -->
+        <record id="product_bao_jumbo_1t" model="product.product">
+            <field name="name">Bao Jumbo 1 Tấn Có Lót PE Chống Ẩm (FIBC Bag)</field>
+            <field name="default_code">HP-BAG-JUMBO1T</field>
+            <field name="categ_id" ref="categ_supplies_packaging"/>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="standard_price">110000.0</field>
+            <field name="list_price">145000.0</field>
+            <field name="is_storable" eval="True"/>
+            <field name="description_sale">Vỏ bao Jumbo chịu tải an toàn SWL 1.000kg - SF 5:1, có 4 quai cẩu, nắp ống nạp, đáy ống xả, lót túi nilon PE 50 micron chống hút ẩm.</field>
+            <field name="description_purchase">Vỏ bao Jumbo chuyên dụng đóng quặng và bột khoáng siêu mịn.</field>
+        </record>
+
+    </data>
+</odoo>
