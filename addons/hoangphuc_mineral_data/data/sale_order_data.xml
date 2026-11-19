@@ -19,7 +19,7 @@
             <field name="product_id" ref="product_cat_thach_anh_loc_kinh"/>
             <field name="name">Cát Thạch Anh Tinh Chế Làm Kính (Silica Sand 99.5%)</field>
             <field name="product_uom_qty">3000.0</field>
-            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="product_uom_id" ref="uom.product_uom_ton"/>
             <field name="price_unit">850000.0</field>
         </record>
 
@@ -37,7 +37,7 @@
             <field name="product_id" ref="product_quang_dolomite"/>
             <field name="name">Quặng Dolomite Luyện Thép (Dolomite Lump 10-50mm)</field>
             <field name="product_uom_qty">8000.0</field>
-            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="product_uom_id" ref="uom.product_uom_ton"/>
             <field name="price_unit">680000.0</field>
         </record>
 
@@ -55,7 +55,7 @@
             <field name="product_id" ref="product_bot_da_voi_sieu_min"/>
             <field name="name">Bột Đá CaCO3 Siêu Mịn Tráng Phủ Axit Béo (Coated Calcium Carbonate)</field>
             <field name="product_uom_qty">1200.0</field>
-            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="product_uom_id" ref="uom.product_uom_ton"/>
             <field name="price_unit">1800000.0</field>
         </record>
 
@@ -73,7 +73,7 @@
             <field name="product_id" ref="product_tinh_quang_titan"/>
             <field name="name">Tinh Quặng Titan Ilmenite 52% TiO2 (Titanium Ore)</field>
             <field name="product_uom_qty">1000.0</field>
-            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="product_uom_id" ref="uom.product_uom_ton"/>
             <field name="price_unit">4600000.0</field>
         </record>
 
@@ -91,7 +91,7 @@
             <field name="product_id" ref="product_bot_barite_42"/>
             <field name="name">Bột Barite Khoan Dầu Khí 4.2 SG (API Barite Powder)</field>
             <field name="product_uom_qty">800.0</field>
-            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="product_uom_id" ref="uom.product_uom_ton"/>
             <field name="price_unit">3200000.0</field>
         </record>
 
@@ -109,7 +109,7 @@
             <field name="product_id" ref="product_bot_thach_anh_325"/>
             <field name="name">Bột Thạch Anh Siêu Mịn 325 Mesh (Silica Powder)</field>
             <field name="product_uom_qty">500.0</field>
-            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="product_uom_id" ref="uom.product_uom_ton"/>
             <field name="price_unit">1450000.0</field>
         </record>
 
@@ -127,7 +127,7 @@
             <field name="product_id" ref="product_bot_thach_anh_325"/>
             <field name="name">Bột Thạch Anh Siêu Mịn 325 Mesh (Silica Powder)</field>
             <field name="product_uom_qty">300.0</field>
-            <field name="product_uom" ref="uom.product_uom_ton"/>
+            <field name="product_uom_id" ref="uom.product_uom_ton"/>
             <field name="price_unit">1450000.0</field>
         </record>
 
