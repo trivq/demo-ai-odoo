@@ -46,7 +46,14 @@
         </record>
 
         <!-- ĐƠN PO003: Mua 1.500 tấn Quặng Titan thô từ Mỏ Kỳ Anh (Đã hoàn tất nhập kho) -->
-      
+        <record id="po_hp_003" model="purchase.order">
+            <field name="name">PO-HP2026-003</field>
+            <field name="partner_id" ref="partner_mo_titan_ky_anh"/>
+            <field name="date_order">2026-10-12 14:00:00</field>
+            <field name="date_planned">2026-10-30 18:00:00</field>
+            <field name="state">purchase</field>
+            <field name="note">Đơn mua quặng sa khoáng thô từ mỏ Kỳ Anh về nhà máy tuyển tinh quặng xuất khẩu. Đã nghiệm thu và giao đủ về bãi.</field>
+        </record>
 
         <record id="po_line_hp_003_1" model="purchase.order.line">
             <field name="order_id" ref="po_hp_003"/>
